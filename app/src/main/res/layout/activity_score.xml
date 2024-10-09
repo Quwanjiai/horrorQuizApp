@@ -15,4 +15,12 @@
         android:id="@+id/scoreTV"
         />
 
+    <Button
+        android:id="@+id/sendEM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send score to email."
+        android:textSize="30dp"
+        />
+
 </LinearLayout>

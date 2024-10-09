@@ -3,44 +3,68 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/ghosts"
     xmlns:android="http://schemas.android.com/apk/res/android"
     >
 
     <TextView
         android:id="@+id/QuestiovTv"
         android:layout_width="match_parent"
-        android:layout_height="78dp"
-        android:text="blank blank"
-        android:textSize="45dp" />
+        android:layout_height="89dp"
+        android:text="@string/q1Text"
+        android:textColor="@color/white"
+        android:textSize="18.7dp" />
 
     <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="420dp"
+        android:layout_height="408dp"
+        android:background="#55FFFFFF"
         android:orientation="vertical">
 
         <RadioButton
             android:id="@+id/WrongBTN1"
             android:layout_width="match_parent"
-            android:layout_height="155dp"
-            android:textSize="30dp"
-            android:text="1 GO BOOOM" />
+            android:layout_height="95dp"
+            android:text="@string/q1ChoiceA"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
 
         <RadioButton
             android:id="@+id/WrongBTN2"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:textSize="30dp"
-            android:text="2 GO BOOOM" />
+            android:layout_height="107dp"
+            android:text="@string/q1ChoiceB"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/WrongBTN3"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:text="Stay completely still and observe the figure for a moment."
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/WrongBTN4"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:text="Call out to the figure, trying to communicate"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
 
     </RadioGroup>
 
 
     <Button
         android:id="@+id/NextBTN"
-        android:text="Final Answer?"
-        android:textSize="33dp"
         android:layout_width="310dp"
         android:layout_height="70dp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:background="@drawable/colorbuytt"
+        android:text="Next Question?"
+        android:textColor="@color/white"
+        android:textSize="33dp" />
 
 </LinearLayout>

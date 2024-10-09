@@ -17,7 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    RadioButton WrongBTN1,WrongBTN2;
+    RadioButton WrongBTN1,WrongBTN2,WrongBTN3,WrongBTN4;
     TextView QuestiovTv;
     Button NextBTN;
     String toastMsg;
@@ -37,81 +37,90 @@ public class MainActivity extends AppCompatActivity {
 
         WrongBTN1 = (RadioButton) findViewById(R.id.WrongBTN1);
         currentIndex = 0;
-        currentq = q1;
-        q1 = new Questions("You're lost in a graveyard at midnight all by yourself. And you see a tall figure in the shodaw;s looking at you with white eyes. What do you do?",
-                "C",
-                "Approach the figure to ask if they can help you find your way",
-                " Run in the opposite direction as fast as you can.",
-                "Stay completely still and observe the figure for a moment",
-                "Call out to the figure, trying to communicate.");
 
-        q2 = new Questions("If you hear tapping on your window at night and turn to see a figure looking at you what will you do?",
+
+        q1 = new Questions(getString(R.string.q1Text), "C",
+                getString(R.string.q1ChoiceA),
+                getString(R.string.q1ChoiceB),
+                getString(R.string.q1ChoiceC),
+                getString(R.string.q1ChoiceD));
+
+        q2 = new Questions(getString(R.string.q2Text),
                 "B",
-                "Open the window to see what the figure wants",
-                "Turn off the lights and hide under the bed.",
-                "Grab your phone to call for help.",
-                "Stay silent and watch the figure closely.");
+                getString(R.string.q2ChoiceA),
+                getString(R.string.q2ChoiceB),
+                getString(R.string.q2ChoiceC),
+                getString(R.string.q2ChoiceD));
 
-        q3 = new Questions("There’s a man following you and as you start to walk fast and he starts running at you, what's your next move?","A",
-                " Run in the opposite direction as fast as you can",
-                "Turn around and confront him, asking what he wants.",
-                "Look for a nearby place to hide, like a store or alley.",
-                "Yell for help to attract attention.");
+        q3 = new Questions(getString(R.string.q3text),"A",
+                getString(R.string.q3ChoiceA),
+                getString(R.string.q3ChoiceB),
+                getString(R.string.q3ChoiceC),
+                getString(R.string.q3ChoiceD));
 
-        q4 = new Questions("You’re trapped in a cabin with two famous horror movie characters: Jason Voorhees from Friday the 13th and Freddy Krueger from A Nightmare on Elm Street. You have to choose one to face, knowing you may survive",
+        q4 = new Questions(getString(R.string.q4text),
                 "A",
-                "Face Jason Voorhees in the cabin",
-                "Confront Freddy Krueger in your dreams",
-                "Try to escape the cabin through a window",
-                " Attempt to negotiate with one of them for your life.");
+                getString(R.string.q4ChoiceA),
+                getString(R.string.q4ChoiceB),
+                getString(R.string.q4ChoiceC),
+                getString(R.string.q4ChoiceD));
 
-        q5 = new Questions("You’re wandering through the Texas countryside when you encounter Leatherface from The Texas Chainsaw Massacre. You spot two ways to escape?",
+        q5 = new Questions(getString(R.string.q5text),
                 "D",
-                "Hide in a nearby thicket of trees",
-                "Climb a fence to get to a neighboring property",
-                "Try to reason with Leatherface, hoping he’ll let you go",
-                "Run down the open dirt road where you might find help.");
+                getString(R.string.q5ChoiceA),
+                getString(R.string.q5ChoiceB),
+                getString(R.string.q5ChoiceC),
+                getString(R.string.q5ChoiceD));
 
-        q6 = new Questions("You wake up chained in a dark room, and Jigsaw** fromSaw* gives you four choices to escape?",
+        q6 = new Questions(getString(R.string.q6text),
                 "C",
-                "Solve a series of puzzles he has laid out for you",
-                "Attempt to break the chains using any nearby tools",
-                "Follow the instructions of a recorded message from Jigsaw",
-                "Call out for help, hoping someone will hear you.");
+                getString(R.string.q6ChoiceA),
+                getString(R.string.q6ChoiceB),
+                getString(R.string.q6ChoiceC),
+                getString(R.string.q6ChoiceD));
 
-        q7 = new Questions("You’re stuck in a creepy hotel, and Jack Torrance from The Shining is coming after you with an axe. You see 4 possible exits?",
+        q7 = new Questions(getString(R.string.q7Text),
                 "B",
-                " The emergency exit door down the hall.",
-                "The snow-covered maze outside.",
-                "A window you could break to escape.",
-                "A staircase leading to the upper floors.");
+                getString(R.string.q7ChoiceA),
+                getString(R.string.q7ChoiceB),
+                getString(R.string.q7ChoiceC),
+                getString(R.string.q7ChoiceD));
 
-        q8 = new Questions("You find yourself in a rural area where The Creeper from Jeepers Creepers is hunting for his next victim. You have two ways to escape?",
+        q8 = new Questions(getString(R.string.q8Text),
                 "D",
-                "Hide in a nearby barn and wait for him to leave.",
-                "Try to find a vehicle and drive away.",
-                "Climb onto the roof of a house to get a better vantage point.",
-                "Run into the dense woods to find shelter.");
+                getString(R.string.q8ChoiceA),
+                getString(R.string.q8ChoiceB),
+                getString(R.string.q8ChoiceC),
+                getString(R.string.q8ChoiceD));
 
-        q9 = new Questions("You’re in a haunted house, and The Babadook is lurking in the shadows. You have two options to survive?",
+        q9 = new Questions(getString(R.string.q9Text),
                 "B",
-                "Confront The Babadook and try to reason with it.",
-                "Find a way to banish it using items from the house",
-                "Hide in a closet and stay silent.",
-                "Search for a way out through the back door");
+                getString(R.string.q9ChoiceA),
+                getString(R.string.q9ChoiceB),
+                getString(R.string.q9ChoiceC),
+                getString(R.string.q9ChoiceD));
 
-        q10 = new Questions("You’re being stalked by The Predator in a dense jungle. You have two options for survival?",
+        q10 = new Questions(getString(R.string.q10Text),
                 "A",
-                "Cover yourself in ,ud to mask your heat signature",
-                "Hide in the trees and stay silent",
-                "Set traps using vine and rocks",
-                "Run around yelling like a fool");
+                getString(R.string.q10ChoiceA),
+                getString(R.string.q10ChoiceB),
+                getString(R.string.q10ChoiceC),
+                getString(R.string.q10ChoiceD));
         
         questionss = new Questions[] {q1,q2,q3,q4,q5,q6,q7,q8,q9,q10};
         WrongBTN2 = (RadioButton) findViewById(R.id.WrongBTN2);
+        WrongBTN3 = (RadioButton) findViewById(R.id.WrongBTN3);
+        WrongBTN4 = (RadioButton) findViewById(R.id.WrongBTN4);
         NextBTN = (Button) findViewById(R.id.NextBTN);
         QuestiovTv = (TextView) findViewById(R.id.QuestiovTv);
-        toastMsg = "You Got it Correct";
+        toastMsg = getString(R.string.correct_msg);
+
+        currentq = q1;
+        QuestiovTv.setText(currentq.getqText());
+        WrongBTN1.setText(currentq.getChoiceA());
+        WrongBTN2.setText(currentq.getChoiceB());
+        WrongBTN3.setText(currentq.getChoiceB());
+        WrongBTN4.setText(currentq.getChoiceD());
 
 
         NextBTN.setOnClickListener(new View.OnClickListener() {
@@ -122,19 +131,23 @@ public class MainActivity extends AppCompatActivity {
                 myToast = Toast.makeText(MainActivity.this, toastMsg, duration);
                 myToast.show();
 
+                // checking if more questions are available
                 if (currentIndex == 9) {
                     GoToSA = new Intent(MainActivity.this, ScoreActivity.class);
                     GoToSA.putExtra("score",score);
                     startActivity(GoToSA);
 
-                }
-                else {
+                } else {
+                    // updates the radiobuttons questions
                     currentIndex++;
                     currentq = questionss[currentIndex];
                     QuestiovTv.setText(currentq.getqText());
+                    WrongBTN1.setText(currentq.getChoiceA());
+                    WrongBTN2.setText(currentq.getChoiceB());
+                    WrongBTN3.setText(currentq.getChoiceB());
+                    WrongBTN4.setText(currentq.getChoiceD());
 
                 }
-
 
             }
         });
@@ -144,11 +157,12 @@ public class MainActivity extends AppCompatActivity {
     public String CHeckuser(String userchoice, String correct) {
         if (userchoice.equals(correct)){
             score+=9;
-            toastMsg = "you got ir correct";
+            toastMsg = getString(R.string.correct_msg);
         }
         else {
-            toastMsg = "loser you got it wrong";
+            toastMsg = getString(R.string.wrong_msg);
         }
         return userchoice;
     }
+
 }
