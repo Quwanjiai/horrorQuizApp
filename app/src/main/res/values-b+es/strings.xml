@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Aplicación de prueba de terror</string>
-    <string name="q1Text">You\'re lost in a grave yard at midnight all by yourself. And you see a tall figure in the shodaws looking at you with white eyes. What do you do</string>
-    <string name="q2Text">If you hear tapping on your window at night and turn to see a figure looking at you what will you do?</string>
-    <string name="q3text">There’s a man following you and as you start to walk fast and he starts running at you, what\'s your next move?</string>
-    <string name="q4text">You’re trapped in a cabin with two famous horror movie characters: Jason Voorhees from Friday the 13th and Freddy Krueger from A Nightmare on Elm Street. You have to choose one to face, knowing you may survive</string>
-    <string name="q5text">You’re wandering through the Texas countryside when you encounter Leatherface from The Texas Chainsaw Massacre. You spot two ways to escape?</string>
-    <string name="q6text">You wake up chained in a dark room, and Jigsaw** fromSaw* gives you four choices to escape?</string>
-    <string name="q7Text">You’re stuck in a creepy hotel, and Jack Torrance from The Shining is coming after you with an axe. You see 4 possible exits?</string>
-    <string name="q8Text">You find yourself in a rural area where The Creeper from Jeepers Creepers is hunting for his next victim. You have two ways to escape?</string>
-    <string name="q9Text">You’re in a haunted house, and The Babadook is lurking in the shadows. You have two options to survive?</string>
-    <string name="q10Text">You’re being stalked by The Predator in a dense jungle. You have two options for survival?</string>
+    <string name="q1Text">Estás perdido en un cementerio a medianoche, solo. Y ves una figura alta entre los shodaws mirándote con ojos blancos. A qué te dedicas (1</string>
+    <string name="q2Text">Si escuchas unos golpecitos en tu ventana por la noche y te giras y ves una figura mirándote, ¿qué harás? (2</string>
+    <string name="q3text">Hay un hombre siguiéndote y cuando comienzas a caminar rápido y él comienza a correr hacia ti, ¿cuál es tu próximo movimiento? (3</string>
+    <string name="q4text">Estás atrapado en una cabaña con dos personajes famosos de películas de terror: Jason Voorhees de Viernes 13 y Freddy Krueger de Pesadilla en Elm Street. Tienes que elegir uno al que enfrentarte, sabiendo que puedes sobrevivir. (4</string>
+    <string name="q5text">Estás deambulando por la campiña de Texas cuando te encuentras con Leatherface de La masacre de Texas. ¿Ves dos formas de escapar? (5</string>
+    <string name="q6text">¿Te despiertas encadenado en una habitación oscura y Jigsaw** de Saw* te ofrece cuatro opciones para escapar? (6</string>
+    <string name="q7Text">Estás atrapado en un hotel espeluznante y Jack Torrance de The Shining te persigue con un hacha. ¿Ves 4 posibles salidas? (7</string>
+    <string name="q8Text">Te encuentras en una zona rural donde The Creeper de Jeepers Creepers está buscando a su próxima víctima. ¿Tienes dos formas de escapar? (8</string>
+    <string name="q9Text">Estás en una casa embrujada y The Babadook acecha en las sombras. ¿Tienes dos opciones para sobrevivir? (9</string>
+    <string name="q10Text">El Depredador te está acechando en una densa jungla. Tienes dos opciones para sobrevivir? (10</string>
     <string name="q1ChoiceA">Acércate a la figura para preguntarle si puede ayudarte a encontrar el camino.</string>
     <string name="q1ChoiceB">" Run in the opposite direction as fast as you can."</string>
     <string name="q1ChoiceC">Stay completely still and observe the figure for a moment</string>
@@ -53,4 +53,5 @@
     <string name="q10ChoiceD">Run around yelling like a fool</string>
     <string name="correct_msg">You Got it Correct</string>
     <string name="wrong_msg">loser you got it wrong</string>
+    <string name="pointmsg">you have lost a point</string>
 </resources>

@@ -27,6 +27,7 @@ public class ScoreActivity extends AppCompatActivity {
         setContentView(R.layout.activity_score);
 
         scoreTV = findViewById(R.id.scoreTV);
+        sendEM = findViewById(R.id.sendEM);
         welcomeSA = getIntent();
         score = welcomeSA.getIntExtra("score",0);
         scoreTV.setText("" + score);
@@ -36,17 +37,18 @@ public class ScoreActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String[] addresses = new String[] {"daquanaplo@gmail.com"};
                 String subject = "New Score on the Horror Quiz App";
-                String body = "Score on your quiz";
-                composeEmail(addresses, subject);
+                String body = "Score on your quiz "+score;
+                composeEmail(addresses, subject, body);
             }
         });
     }
 
-    private  void composeEmail(String[] addresses, String subject) {
+    private  void composeEmail(String[] addresses, String subject, String body) {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
-        intent.setData(Uri.parse("maitlto:"));
+        intent.setData(Uri.parse("mailto:"));
         intent.putExtra(Intent.EXTRA_EMAIL, addresses);
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+        intent.putExtra(Intent.EXTRA_TEXT, body);
 
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);

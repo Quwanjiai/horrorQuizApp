@@ -9,11 +9,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     TextView QuestiovTv;
     Button NextBTN;
     String toastMsg;
+    String CheckUser;
     Toast myToast;
     int duration,score;
     Intent GoToSA;
@@ -34,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         WrongBTN1 = (RadioButton) findViewById(R.id.WrongBTN1);
         currentIndex = 0;
@@ -127,6 +125,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                if (WrongBTN1.isChecked()) {
+                    CheckUser("A",currentq.getCorrectAns());
+                } else if (WrongBTN2.isChecked()) {
+                    CheckUser("B",currentq.getCorrectAns());
+                } else if (WrongBTN3.isChecked()) {
+                    CheckUser("C",currentq.getCorrectAns());
+                } else if (WrongBTN4.isChecked()) {
+                    CheckUser("D",currentq.getCorrectAns());
+                }
+
                 duration = Toast.LENGTH_SHORT;
                 myToast = Toast.makeText(MainActivity.this, toastMsg, duration);
                 myToast.show();
@@ -152,17 +160,40 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
     }
 
-    public String CHeckuser(String userchoice, String correct) {
+    public void CheckUser(String userchoice, String correct) {
         if (userchoice.equals(correct)){
-            score+=9;
+            score+=10;
             toastMsg = getString(R.string.correct_msg);
         }
         else {
             toastMsg = getString(R.string.wrong_msg);
         }
-        return userchoice;
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (currentIndex == 0) {
+            super.onBackPressed();
+            duration = Toast.LENGTH_SHORT;
+            toastMsg = "you backed off";
+            myToast = Toast.makeText(MainActivity.this, toastMsg, duration);
+            myToast.show();
+        } else {
+            score--;
+
+            currentIndex--;
+            currentq = questionss[currentIndex];
+            QuestiovTv.setText(currentq.getqText());
+            WrongBTN1.setText(currentq.getChoiceA());
+            WrongBTN2.setText(currentq.getChoiceB());
+            WrongBTN3.setText(currentq.getChoiceB());
+            WrongBTN4.setText(currentq.getChoiceD());
+        }
+
     }
 
 }
