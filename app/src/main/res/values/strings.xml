@@ -52,4 +52,5 @@
     <string name="q10ChoiceD">Run around yelling like a fool</string>
     <string name="correct_msg">You Got it Correct</string>
     <string name="wrong_msg">loser you got it wrong</string>
+    <string name="pointmsg">you have lost a point</string>
 </resources>
