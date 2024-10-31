@@ -11,7 +11,7 @@
     <string name="q9Text">You’re in a haunted house, and The Babadook is lurking in the shadows. You have two options to survive? (9</string>
     <string name="q10Text">You’re being stalked by The Predator in a dense jungle. You have two options for survival? (10</string>
     <string name="q1ChoiceA">Approach the figure to ask if they can help you find your way</string>
-    <string name="q1ChoiceB">" Run in the opposite direction as fast as you can."</string>
+    <string name="q1ChoiceB">Run in the opposite direction as fast as you can.</string>
     <string name="q1ChoiceC">Stay completely still and observe the figure for a moment</string>
     <string name="q1ChoiceD">Call out to the figure, trying to communicate.</string>
     <string name="q2ChoiceA">Open the window to see what the figure wants</string>

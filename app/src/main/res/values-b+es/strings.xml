@@ -12,11 +12,11 @@
     <string name="q9Text">Estás en una casa embrujada y The Babadook acecha en las sombras. ¿Tienes dos opciones para sobrevivir? (9</string>
     <string name="q10Text">El Depredador te está acechando en una densa jungla. Tienes dos opciones para sobrevivir? (10</string>
     <string name="q1ChoiceA">Acércate a la figura para preguntarle si puede ayudarte a encontrar el camino.</string>
-    <string name="q1ChoiceB">" Run in the opposite direction as fast as you can."</string>
-    <string name="q1ChoiceC">Stay completely still and observe the figure for a moment</string>
-    <string name="q1ChoiceD">Call out to the figure, trying to communicate.</string>
+    <string name="q1ChoiceB">Corre en la dirección opuesta lo más rápido que puedas.</string>
+    <string name="q1ChoiceC">Quédate completamente quieto y observa la figura por un momento.</string>
+    <string name="q1ChoiceD">Llame a la figura, tratando de comunicarse.</string>
     <string name="q2ChoiceA">Abre la ventana para ver qué quiere la figura.</string>
-    <string name="q2ChoiceB">Turn off the lights and hide under the bed.</string>
+    <string name="q2ChoiceB">Apaga las luces y escóndete debajo de la cama.</string>
     <string name="q2ChoiceC">Grab your phone to call for help.</string>
     <string name="q2ChoiceD">Stay silent and watch the figure closely.</string>
     <string name="q3ChoiceA">Corre en la dirección opuesta lo más rápido que puedas.</string>
