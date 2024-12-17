@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "121073196823",
+    "project_id": "horrorquizappfb",
+    "storage_bucket": "horrorquizappfb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121073196823:android:b96c94b5c5d51bf29b6152",
+        "android_client_info": {
+          "package_name": "org.baltimorecityschools.horrorquizapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8TQCPLfvVxK4E0rSezBxMy1KJBlU-5_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

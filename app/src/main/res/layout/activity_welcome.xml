@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ghosts"
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="335dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="118dp"
+            android:text="HORROR QUIZ"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="50dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/GhostPN" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/NameLtL"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:textAlignment="center"
+        android:text="Welcome, User"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        />
+
+
+    <EditText
+        android:id="@+id/userBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your name here!"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/confBTN"
+        android:layout_width="172dp"
+        android:layout_height="31dp"
+        android:layout_gravity="center"
+        android:text="Comfrim"
+        android:background="@drawable/custom_button"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/strtBTN"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Start Test"
+        android:background="@drawable/custom_button"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+
+</LinearLayout>

@@ -2,9 +2,11 @@ package org.baltimorecityschools.horrorquizapp;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -12,6 +14,12 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+
+    LinearLayout backgroundH;
+    private SharedPreferences mPreferences;
+    private String sharedPrefFile = "org.codeintheschools.android.unit3_lesson1_a";
+    private final String COLOR_KEY = "COLOR";
+
 
     RadioButton WrongBTN1,WrongBTN2,WrongBTN3,WrongBTN4;
     TextView QuestiovTv;
@@ -32,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mPreferences = getSharedPreferences(sharedPrefFile, MODE_PRIVATE);
+
+        backgroundH = (LinearLayout) findViewById(R.id.main);
 
         WrongBTN1 = (RadioButton) findViewById(R.id.WrongBTN1);
         currentIndex = 0;
