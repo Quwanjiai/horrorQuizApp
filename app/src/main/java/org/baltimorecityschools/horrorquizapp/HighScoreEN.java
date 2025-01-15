@@ -1,6 +1,6 @@
 package org.baltimorecityschools.horrorquizapp;
 
-public class HighScoreEN {
+public class HighScoreEN implements Comparable{
 
     private String nameRK;
     private int score;
@@ -16,6 +16,11 @@ public class HighScoreEN {
         nameRK = snameRK;
         score = sscore;
         //date = sdate;
+    }
+
+    public HighScoreEN(String snameRK, int sscore) {
+        nameRK = snameRK;
+        score = sscore;
     }
 
     public String getNameRK() {
@@ -49,5 +54,11 @@ public class HighScoreEN {
                 ", score=" + score +
                 //", date='" + date + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        HighScoreEN other = (HighScoreEN)o;
+        return other.score-this.score;
     }
 }

@@ -2,27 +2,26 @@ package org.baltimorecityschools.horrorquizapp;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-import org.w3c.dom.Text;
+import android.content.SharedPreferences;
 
 public class WelcomeActivity extends AppCompatActivity {
+
+    private SharedPreferences mPreferences;
+    private String sharedPrefFile = "org.codeintheschools.android.unit3_lesson1_a";
+
 
     Button srtBTN,conBTN;
     Intent GoToMenu;
     EditText userNET;
     String name;
-    String greet;
     TextView NameLtt;
 
     @SuppressLint("MissingInflatedId")
@@ -40,8 +39,20 @@ public class WelcomeActivity extends AppCompatActivity {
         srtBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                GoToMenu = new Intent(WelcomeActivity.this, MainActivity.class );
-                startActivity(GoToMenu);
+
+                String username = userNET.getText().toString().trim();
+
+                if (!username.isEmpty()) {
+                    mPreferences = getSharedPreferences(sharedPrefFile, MODE_PRIVATE);
+                    SharedPreferences.Editor editor = mPreferences.edit();
+                    editor.putString("username", username);
+                    editor.apply();
+
+                    GoToMenu = new Intent(WelcomeActivity.this, MainActivity.class );
+                    startActivity(GoToMenu);
+                }
+
+
             }
         });
 

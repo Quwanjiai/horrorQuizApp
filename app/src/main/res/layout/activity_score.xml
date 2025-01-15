@@ -15,8 +15,6 @@
             android:orientation="vertical">
 
 
-
-
             <TextView
                 android:id="@+id/scoreTV"
                 android:layout_width="match_parent"
@@ -26,102 +24,25 @@
                 android:textColor="@color/white"
                 android:textSize="40dp" />
 
-            <!--        <TextView-->
-            <!--            android:id="@+id/player1"-->
-            <!--            android:layout_width="match_parent"-->
-            <!--            android:layout_height="58dp"-->
-            <!--            android:layout_gravity="top"-->
-            <!--            android:gravity="center"-->
-            <!--            android:text="."-->
-            <!--            android:textAlignment="center"-->
-            <!--            android:textColor="@color/white"-->
-            <!--            android:textSize="20dp" />-->
-
-            <!--        <TextView-->
-            <!--            android:id="@+id/player2"-->
-            <!--            android:layout_width="match_parent"-->
-            <!--            android:layout_height="67dp"-->
-            <!--            android:layout_gravity="top"-->
-            <!--            android:gravity="center"-->
-            <!--            android:text="."-->
-            <!--            android:textAlignment="center"-->
-            <!--            android:textColor="@color/white"-->
-            <!--            android:textSize="20dp" />-->
-
-            <!--        <TextView-->
-            <!--            android:id="@+id/player3"-->
-            <!--            android:layout_width="match_parent"-->
-            <!--            android:layout_height="65dp"-->
-            <!--            android:layout_gravity="top"-->
-            <!--            android:gravity="center"-->
-            <!--            android:text="."-->
-            <!--            android:textAlignment="center"-->
-            <!--            android:textColor="@color/white"-->
-            <!--            android:textSize="20dp" />-->
-
-            <!--        <TextView-->
-            <!--            android:id="@+id/player4"-->
-            <!--            android:layout_width="match_parent"-->
-            <!--            android:layout_height="69dp"-->
-            <!--            android:layout_gravity="top"-->
-            <!--            android:gravity="center"-->
-            <!--            android:text="."-->
-            <!--            android:textAlignment="center"-->
-            <!--            android:textColor="@color/white"-->
-            <!--            android:textSize="20dp" />-->
-
-            <!--        <TextView-->
-            <!--            android:id="@+id/player5"-->
-            <!--            android:layout_width="match_parent"-->
-            <!--            android:layout_height="67dp"-->
-            <!--            android:layout_gravity="top"-->
-            <!--            android:gravity="center"-->
-            <!--            android:text="."-->
-            <!--            android:textAlignment="center"-->
-            <!--            android:textColor="@color/white"-->
-            <!--            android:textSize="20dp" />-->
-
-            <!--        <TextView-->
-            <!--            android:id="@+id/player6"-->
-            <!--            android:layout_width="match_parent"-->
-            <!--            android:layout_height="63dp"-->
-            <!--            android:layout_gravity="top"-->
-            <!--            android:gravity="center"-->
-            <!--            android:text="."-->
-            <!--            android:textAlignment="center"-->
-            <!--            android:textColor="@color/white"-->
-            <!--            android:textSize="20dp" />-->
-
-            <!--        <TextView-->
-            <!--            android:id="@+id/palyer7"-->
-            <!--            android:layout_width="match_parent"-->
-            <!--            android:layout_height="63dp"-->
-            <!--            android:layout_gravity="top"-->
-            <!--            android:gravity="center"-->
-            <!--            android:text="."-->
-            <!--            android:textAlignment="center"-->
-            <!--            android:textColor="@color/white"-->
-            <!--            android:textSize="20dp" />-->
-
-            <!--        <TextView-->
-            <!--            android:id="@+id/player8"-->
-            <!--            android:layout_width="match_parent"-->
-            <!--            android:layout_height="63dp"-->
-            <!--            android:layout_gravity="top"-->
-            <!--            android:gravity="center"-->
-            <!--            android:text="."-->
-            <!--            android:textAlignment="center"-->
-            <!--            android:textColor="@color/white"-->
-            <!--            android:textSize="20dp" />-->
-
 
         </LinearLayout>
 
 
     <TextView
-        android:id="@+id/player1"
+        android:id="@+id/titlescore"
         android:layout_width="match_parent"
         android:layout_height="58dp"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:text="USER           SCORE"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/player1"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
         android:layout_gravity="top"
         android:gravity="center"
         android:text="."
@@ -132,7 +53,7 @@
     <TextView
         android:id="@+id/player2"
         android:layout_width="match_parent"
-        android:layout_height="67dp"
+        android:layout_height="65dp"
         android:layout_gravity="top"
         android:gravity="center"
         android:text="."
@@ -143,7 +64,7 @@
     <TextView
         android:id="@+id/player3"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="69dp"
         android:layout_gravity="top"
         android:gravity="center"
         android:text="."
@@ -154,17 +75,6 @@
     <TextView
         android:id="@+id/player4"
         android:layout_width="match_parent"
-        android:layout_height="69dp"
-        android:layout_gravity="top"
-        android:gravity="center"
-        android:text="."
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="20dp" />
-
-    <TextView
-        android:id="@+id/player5"
-        android:layout_width="match_parent"
         android:layout_height="67dp"
         android:layout_gravity="top"
         android:gravity="center"
@@ -174,7 +84,7 @@
         android:textSize="20dp" />
 
     <TextView
-        android:id="@+id/player6"
+        android:id="@+id/player5"
         android:layout_width="match_parent"
         android:layout_height="63dp"
         android:layout_gravity="top"
@@ -188,7 +98,7 @@
         android:layout_width="match_parent"
         android:layout_height="43dp"
         android:layout_gravity="top"
-        android:background=""
+        android:background="#FFF888"
         android:gravity="center"
         android:text="HIGH SCORES"
         android:textAlignment="center"
@@ -197,8 +107,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="53dp"
-        android:orientation="vertical" >
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/sendEM"
@@ -217,8 +127,16 @@
         android:layout_width="196dp"
         android:layout_height="35dp"
         android:layout_gravity="center"
-        android:text="Send score to bored"
+        android:text="Send score to board"
         />
+
+    <Button
+        android:id="@+id/resetBTN"
+        android:layout_width="139dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center"
+        android:text="Start Over"
+        android:textSize="13dp" />
 
 
 

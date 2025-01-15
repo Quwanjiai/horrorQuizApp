@@ -14,7 +14,7 @@
         android:layout_height="89dp"
         android:text="@string/q1Text"
         android:textColor="@color/white"
-        android:textSize="18.7dp" />
+        android:textSize="19.2dp" />
 
     <RadioGroup
         android:layout_width="match_parent"
