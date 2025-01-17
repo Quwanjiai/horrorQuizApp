@@ -146,6 +146,7 @@ public class MainActivity extends AppCompatActivity {
                     CheckUser("D",currentq.getCorrectAns());
                 }
 
+
                 duration = Toast.LENGTH_SHORT;
                 myToast = Toast.makeText(MainActivity.this, toastMsg, duration);
                 myToast.show();
@@ -165,6 +166,11 @@ public class MainActivity extends AppCompatActivity {
                     WrongBTN2.setText(currentq.getChoiceB());
                     WrongBTN3.setText(currentq.getChoiceB());
                     WrongBTN4.setText(currentq.getChoiceD());
+
+                    WrongBTN1.setChecked(false);
+                    WrongBTN2.setChecked(false);
+                    WrongBTN3.setChecked(false);
+                    WrongBTN4.setChecked(false);
 
                 }
 

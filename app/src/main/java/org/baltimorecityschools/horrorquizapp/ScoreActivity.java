@@ -1,8 +1,11 @@
 package org.baltimorecityschools.horrorquizapp;
 
+import static android.content.ContentValues.TAG;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -182,6 +185,8 @@ public class ScoreActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
+
+                Log.w(TAG, "Failed to read value.", error.toException());
 
             }
         });
